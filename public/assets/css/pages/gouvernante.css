@@ -1,0 +1,65 @@
+.gourvernante {
+    background-color: white;
+    color: black;
+    margin-top: 15px;
+}
+
+.gourvernante__header {
+    display: flex;
+    list-style-type: none;
+    border: 1px solid rgba(0, 0, 0, .6);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.gourvernante__header li {
+    width: calc(100% / 7);
+    border-right: 1px solid rgba(0, 0, 0, .6);
+    padding: 5px;
+    background-image: url("../../images/bg/bg_blue.png");
+}
+
+.gourvernante__fiches {
+    display: flex;
+    flex-direction: column;
+}
+
+.gourvernante__fiches li {
+    display: flex;
+}
+
+.gourvernante__fiches li p {
+    width: calc(100% / 7);
+    border: 1px solid rgba(0, 0, 0, .6);
+    padding: 5px;
+}
+
+.checksIn {
+    background-color: white;
+}
+
+.surPlace {
+    background-color: rgba(254, 207, 65, 0.55);
+
+}
+
+.btn-capture {
+    margin-top: 15px;
+}
+
+.gourvernante h2 {
+    padding: 10px;
+    color: black;
+    font-family: dragonBall;
+    letter-spacing: 2px;
+}
+
+.db-red {
+    color: rgb(226, 35, 32);
+    font-size: 30px;
+}
+
+.db-orange {
+    color: rgb(255, 151, 34);
+    font-size: 30px;
+}

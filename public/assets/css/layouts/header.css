@@ -1,0 +1,198 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(29, 29, 31);
+    color: white;
+    padding: 20px;
+    border-left: 2px solid rgb(49, 49, 51);
+    border-bottom: 2px solid rgb(49, 49, 51);
+
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__left--slogan {
+    color: #bfbfbf;
+    margin-top: 2px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.header__right__alerts {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(255, 255, 255, .3);
+    margin-right: 19px;
+    padding-right: 26px
+}
+
+.header__right__alerts--bells::before {
+    content: "";
+    position: absolute;
+    z-index: 9999;
+    height: 311px;
+    width: 100px;
+    filter: blur(10px);
+    background: linear-gradient(to right, #ffffff3d 30%, #ffffff1a);
+    top: -30px;
+    transition-duration: 1.5s;
+    transform: translate(-190px) skew(-25deg);
+}
+
+.header__right__alerts--bells:hover::before {
+    transform: translateX(70px) skewX(-25deg);
+    transition-duration: 1s;
+}
+
+.header__right__alerts--chat::before {
+    content: "";
+    position: absolute;
+    z-index: 9999;
+    height: 311px;
+    width: 100px;
+    filter: blur(10px);
+    background: linear-gradient(to right, #ffffff3d 30%, #ffffff1a);
+    top: -30px;
+    transition-duration: 1.5s;
+    transform: translate(-190px) skew(-25deg);
+}
+
+.header__right__alerts--chat:hover::before {
+    transform: translateX(70px) skewX(-25deg);
+    transition-duration: 1s;
+}
+
+
+.header__right__alerts--chat,
+.header__right__alerts--bells {
+    transition-duration: 0.4s;
+    border: 1px solid rgba(255, 255, 255, .3);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.header__right__alerts--chat--status,
+.header__right__alerts--bells--status {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 50, 63);
+    border: 1px solid white;
+}
+
+.header__right__profil {
+    display: flex;
+    align-items: center;
+}
+
+.header__right__profil img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header__right__profil__text {
+    font-weight: 600;
+}
+
+header .header__right__profil__text--name {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+header .header__right__profil__text--role {
+    font-size: 12px;
+}
+
+.header__right__profil__text--role {
+    color: #bfbfbf;
+    font-size: 13px;
+}
+
+.header__right__profil__options {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header__right__profil__options:hover i:nth-child(1) {
+    transform: translateY(-2px);
+}
+
+.header__right__profil__options:hover i:nth-child(2) {
+    transform: translateY(2px);
+}
+
+.header__right__profil__options i {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    color: #dbdbdb;
+    transition-duration: .4s;
+}
+
+.header__right__profil__options .fa-angle-up {
+    top: 3px;
+}
+
+.header__right__profil__options .fa-angle-down {
+    bottom: 3px;
+}
+
+/* -------menu deroulant profil--------- */
+
+.header__right__profil__options ul {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(25, 25, 25);
+    border-radius: 3px;
+    flex-direction: column;
+    animation-name: menuDeroulant;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    z-index: 99999;
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.header__right__profil__options ul a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header__right__profil__options:hover ul {
+    display: flex;
+}
+
+.header__right__profil__options ul li {
+    padding: 10px;
+    display: flex;
+}
+
+.header__right__profil__options ul li i {
+    margin-right: 10px;
+    color: rgb(0, 95, 242);
+}
+
+.header__right__profil__options ul li:hover {
+    background-color: rgb(59, 57, 57);
+}

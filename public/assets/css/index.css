@@ -1,0 +1,23 @@
+/* utils */
+@import "./utils/utils.css";
+@import "./utils/animations.css";
+@import "./utils/mediaQueries.css";
+@import "./utils/miseEnPage.css";
+@import "./utils/fonts.css";
+@import "./utils/ModalAdd.css";
+
+/* asside */
+@import "./layouts/aside.css";
+@import "./layouts/header.css";
+
+/* pages */
+@import "./pages/home.css";
+@import "./pages/auth.css";
+@import "./pages/dailyPlanning.css";
+@import "./pages/restaurants.css";
+@import "./pages/agenda.css";
+@import "./pages/agendaWeek.css";
+@import "./pages/agendaYear.css";
+@import "./pages/agendaPlanning.css";
+@import "./pages/profil.css";
+@import "./pages/gouvernante.css";

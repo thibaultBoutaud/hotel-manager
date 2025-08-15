@@ -1,0 +1,415 @@
+@media screen and (max-width: 1529px) {
+    body #root {
+        padding: 20px 10px;
+    }
+
+    body .agendaContent__body__left {
+        width: 152px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    body #root {
+        padding: 20px 10px;
+    }
+
+    body .agendaContent__body__left {
+        width: 152px;
+    }
+
+    body aside {
+        width: 58px;
+    }
+
+    body main {
+        width: 100%;
+    }
+
+    html body .agendaContent {
+        width: 100%;
+    }
+
+    html body .agenda {
+        width: 100%;
+    }
+
+    body .agenda {
+        width: 100%;
+    }
+
+    body .asside__top ul li p {
+        display: none;
+    }
+
+    body .aside__bottom ul li p {
+        display: none;
+    }
+
+    body .dayFiche ul li {
+        font-size: 10px;
+        padding: 13px 0px;
+    }
+
+    body .asside__top__logoContainer__left {
+        padding: 23px 0px 11px 11px;
+    }
+
+    body .asside__top__logoContainer p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 916px) {
+    body .home__webSites--container a div p {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    body .agendaContent__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    body .home__webSites--container {
+        flex-wrap: wrap;
+    }
+
+    body .home__webSites {
+        width: 100%;
+        border-radius: 0px;
+        background-color: black;
+    }
+
+    body .bgImg-blue {
+        border-radius: 0px;
+        margin: 16px;
+    }
+
+    body .home__bodyContainer__plannings__rdvs {
+        width: 100%;
+        margin: 0px;
+    }
+
+    body .home__bodyContainer__alarmes__alerts,
+    body .home__bodyContainer__alarmes__courses {
+        overflow: auto;
+        height: auto;
+    }
+
+    body .alert p {
+        word-wrap: break-word;
+    }
+
+
+    body .home__bodyContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    body .home__bodyContainer__plannings__events {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .home__bodyContainer__plannings__rdvs__container li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home__bodyContainer__plannings__rdvs__container li p {
+        margin: 10px 0px;
+    }
+
+    .alert {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .alert p {
+        margin: 10px 0px;
+    }
+
+
+    html body .home__bodyContainer__plannings {
+        width: 100%;
+    }
+
+
+    body .dayAll {
+        display: none;
+    }
+
+    body .dayMini {
+        display: flex;
+    }
+
+    html body .dayFiche--title p:last-child {
+        font-size: 12px;
+        width: 20px;
+        height: 20px;
+    }
+
+    body .agendaContent {
+        padding: 0px;
+    }
+
+    body #root {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header__left {
+        display: none;
+    }
+
+    body .header__right__alerts {
+        display: none;
+    }
+
+    body .agenda__viewSelection__viewContainer li i {
+        display: none;
+    }
+
+    body .agendaContent__header {
+        width: 90%;
+    }
+
+    body .agenda__viewSelection {
+        border-radius: 0px;
+        position: relative;
+        background-color: rgb(20, 20, 20);
+        top: 0px;
+        z-index: 999;
+    }
+
+    html body .paramsOptions {
+        display: flex;
+    }
+
+    html body .hiddenOnDesktop {
+        display: flex;
+    }
+
+    body .modalFocus {
+        justify-content: flex-start;
+    }
+
+    html body .optionsContainer {
+        width: 100vw;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        z-index: 9999;
+        padding: 15px;
+        transform: translate(0%);
+        transition: transform .4s cubic-bezier(.77, 0, .175, 1);
+    }
+
+    html body .hiddenOnMobile {
+
+        transform: translate(-100%);
+    }
+
+    html body .agendaContent__body__right {
+        width: 95vw;
+    }
+
+    .agenda__viewSelection__viewContainer li {
+        background-color: rgb(20, 20, 20);
+    }
+
+    body .agendaContent {
+        border-radius: 0px;
+    }
+
+    html body .dayFiche {
+        width: 12.2%;
+    }
+
+    html body main {
+        width: 100%;
+    }
+
+    html .modalContent {
+        width: 90%;
+        border-radius: 0;
+    }
+
+    html body .agendaContent {
+        padding-top: 30px;
+        margin-top: -11px;
+    }
+
+    html .modal {
+        justify-content: flex-start;
+    }
+
+    body .tasksFilters p {
+        margin-top: 16px;
+    }
+
+    body .tasksFilters {
+        flex-wrap: wrap;
+        display: flex;
+        width: 84%;
+    }
+
+    body .task--date {
+        display: none;
+    }
+
+    body .task--status p {
+        display: none;
+    }
+
+    body .tasksKeys--date,
+    body .task--date,
+    body .tasksKeys--status {
+        display: none;
+    }
+
+    body .task--status {
+        display: none;
+    }
+
+    body .task--type {
+        margin-right: 15px;
+        width: auto;
+    }
+
+    body .task--name {
+        width: auto;
+    }
+
+    body .tasksKeys--type {
+        margin-right: 15px;
+        width: auto;
+    }
+
+    html body .home__webSites--container {
+        margin-left: 0px;
+    }
+
+    body .meteo {
+        display: none;
+    }
+
+    body .home__bodyContainer__plannings__events {
+        padding: 20px;
+        border-radius: 0px;
+        width: 100%;
+        width: auto;
+        border-radius: 15px;
+        margin: 7px 13px;
+        width: auto;
+        height: auto;
+    }
+
+    html body .home__bodyContainer__plannings__rdvs {
+        padding: 20px;
+        border-radius: 0px;
+        background-color: rgb(29, 29, 31);
+        height: auto;
+        margin: 7px 13px;
+        width: auto;
+        border-radius: 15px;
+    }
+
+    body .decompte {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body .deleteEvent {
+        margin-top: 40px;
+    }
+
+    body .home__bodyContainer__plannings__rdvs__container li {
+        padding: 7px;
+    }
+
+    body .alertContainer {}
+
+    .alert {
+        border: 1px solid rgba(108, 102, 102, 0.2);
+        border-radius: 3px;
+        padding: 16px;
+        margin: 7px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body .home__bodyContainer__plannings__rdvs p:first-child {
+        padding-left: 15px;
+    }
+
+    body .home__bodyContainer__alarmes__alerts p:first-child {
+        padding: 15px;
+    }
+
+    body .home__bodyContainer__alarmes__courses p:first-child {
+        padding: 15px;
+    }
+
+    body .home__bodyContainer__alarmes {
+        padding: 10px 5px;
+        border-radius: 0px;
+        margin: 7px 13px;
+        width: auto;
+        border-radius: 15px;
+        background-color: transparent;
+    }
+
+    body .home__bodyContainer__alarmes__courses {
+        background-color: rgb(29, 29, 31);
+        margin-top: 138px;
+    }
+
+    body .home__bodyContainer__alarmes__alerts {
+        background-color: rgb(29, 29, 31);
+        height: auto;
+        width: 100%;
+        border-radius: 15px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    body .home__bodyContainer__plannings {
+        height: auto;
+    }
+
+    body .home__bodyContainer__plannings__events p:first-child,
+    body .home__bodyContainer__plannings__rdvs>p:first-child,
+    body .home__bodyContainer__alarmes__alerts>p:first-child,
+    body .home__bodyContainer__alarmes__courses>p:first-child {
+        font-size: 25px;
+        width: fit-content;
+        border: 1px solid rgba(255, 255, 255, .1);
+        padding: 15px;
+        background-color: rgba(255, 255, 255, .1);
+        border-radius: 7px;
+    }
+
+    body .alertContainer {
+        margin-top: 0px;
+    }
+
+    body .home__bodyContainer__alarmes__courses {
+        margin-top: 15px;
+        border-radius: 15px;
+        padding: 20px;
+    }
+}

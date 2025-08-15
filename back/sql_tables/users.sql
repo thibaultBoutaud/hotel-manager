@@ -1,0 +1,9 @@
+CREATE TABLE users(
+    id VARCHAR(255) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    password VARCHAR(500) NOT NULL,
+    img_url VARCHAR(500),
+    _isAdmin BOOLEAN DEFAULT FALSE,
+    isConnected BOOLEAN DEFAULT FALSE,
+    role VARCHAR(100) DEFAULT 'Employe'
+)ENGINE=InnoDB;

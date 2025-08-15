@@ -1,0 +1,29 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: roboto-regular;
+}
+
+main {
+    width: 83%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 79px;
+}
+
+#root {
+    flex-grow: 1;
+    background-color: rgb(7, 8, 11);
+    color: white;
+    padding: 20px 40px;
+    overflow: auto;
+}

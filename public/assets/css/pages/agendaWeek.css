@@ -1,0 +1,352 @@
+.agendaContent__header {
+    display: flex;
+    align-items: center;
+    width: 54%;
+    margin: auto;
+}
+
+.agendaContent__header .btn {
+    padding: 10px;
+}
+
+.paramsOptions {
+    display: none;
+    align-items: center;
+    padding: 6px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, .1);
+    width: fit-content;
+    margin: 15px;
+}
+
+.paramsOptions:hover {
+    background-color: rgb(255, 255, 255, .1)
+}
+
+.paramsOptions i {
+    margin-left: 10px;
+}
+
+
+.optionsHeader {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hiddenOnDesktop {
+    display: none;
+}
+
+/* .optionsContainer {
+    transition: transform .4s cubic-bezier(.77, 0, .175, 1);
+    transform: translate(-100%);
+
+}
+
+.optionsContainer.open {
+    transform: translate(0);
+    right: 0;
+} */
+.optionsHeader i {
+    cursor: pointer;
+}
+
+.agendaContent__header--iconsContainer {
+    margin: 0px 11px;
+}
+
+.agendaContent__header--iconsContainer i {
+    margin: 0px 5px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.agendaContent__header--iconsContainer i:hover {
+    background-color: rgb(0, 95, 242);
+}
+
+.agendaContent__body {
+    display: flex;
+}
+
+.agendaContent__body__left {
+    width: 30%;
+    position: relative;
+}
+
+.agendaContent__body__right {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+}
+
+.agendaContent__body__left ul {
+    list-style-type: none;
+}
+
+.agendaContent__body__left--category {
+    margin: 25px 0px 5px 0px;
+}
+
+.agendaContent__body__left .checkBox,
+.agendaContent__body__left .checkBoxParams {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 95, 242);
+    border: 1px solid white;
+}
+
+
+.agendaContent__body__left li {
+    display: flex;
+    align-items: flex-end;
+    margin: 19px 0px;
+}
+
+.agendaContent__body__left li .checkBox,
+.agendaContent__body__left li .checkBoxParams {
+    margin-right: 15px;
+}
+
+.agendaContent__body__left li img {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    display: none;
+}
+
+.agendaContent__body__right ul {
+    list-style-type: none;
+    margin-top: 17px;
+}
+
+.dayOff {
+    filter: brightness(.3);
+}
+
+.dayFiche {
+    width: 14.2%;
+}
+
+.dayFiche--title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dayMini {
+    text-transform: uppercase;
+    display: none;
+}
+
+.currentDay {
+    background-color: rgb(0, 95, 242);
+}
+
+.dayFiche--title p:first-child {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.dayFiche--title p:last-child {
+    font-size: 27px;
+    text-align: center;
+    font-size: 27px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px;
+    cursor: pointer;
+    animation-name: btt;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+.dayFiche--title p:last-child:hover {
+    background-color: rgb(168, 199, 250);
+}
+
+.dayFiche ul li {
+    border: 1px solid rgba(255, 255, 255, .1);
+    padding: 13px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    height: 89px;
+    font-size: 13px;
+    position: relative;
+}
+
+.dayFiche ul li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+}
+
+.dayFiche ul li:first-child {
+    border-top: none;
+}
+
+.checkBox,
+.checkBox__birthDay,
+.checkBoxParams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* === Thème personnalisé pour fond #121415 === */
+
+.birthDayBg {
+    background-color: #F7C59F;
+    /* Pêche doux festif */
+    color: #121415;
+    cursor: pointer;
+    animation-name: growUp;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+.bgJaune {
+    background-color: #D4AF37;
+    /* Jaune or élégant */
+    color: #121415;
+}
+
+.bgBlack {
+    background-color: #121415;
+    /* Fond principal */
+}
+
+.bgBanksHollidays {
+    background-color: #B04A4A;
+    /* Rouge atténué */
+    cursor: pointer;
+}
+
+.bgTasks {
+    background-color: #CA6F1E;
+    /* Orange terre cuite */
+    cursor: pointer;
+    animation-name: growUp;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+.bgRdvs {
+    background-color: #4C9A2A;
+    /* Vert naturel */
+    cursor: pointer;
+    animation-name: growUp;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+.bgEvents {
+    background-color: #A56CC1;
+    /* Violet doux */
+    cursor: pointer;
+    animation-name: growUp;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+.bgProjects {
+    background-color: #2E86C1;
+    /* Bleu moyen */
+    cursor: pointer;
+    animation-name: growUp;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+.bgCourses {
+    background-color: #5DADE2;
+    /* Bleu clair adouci */
+    color: #f0f0f0;
+    cursor: pointer;
+    animation-name: growUp;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+/* modal focus task */
+.boxTitle {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgb(0, 95, 242);
+    margin-right: 15px;
+}
+
+.modalFocus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent__header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalContent__body>div {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.modalContent__body__name div:last-child p:last-child {
+    font-size: 12px;
+}
+
+.modalContent__body__description {
+    display: flex;
+    align-items: center;
+}
+
+.modalContent__body__description i {
+    margin-left: 26px;
+    font-size: 12px;
+    color: rgb(0, 95, 242);
+}
+
+.agendaContent__body__right i {
+    margin-right: 15px;
+}
+
+.modalContent__header i {
+    cursor: pointer;
+}
+
+.agendaContent__body__right .dayFiche {
+    z-index: 50;
+}
+
+.modal {
+    z-index: 9999;
+}
+
+.modalFocus {
+    z-index: 9999;
+}

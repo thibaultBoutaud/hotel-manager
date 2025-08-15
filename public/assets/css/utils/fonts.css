@@ -1,0 +1,13 @@
+@font-face {
+    font-family: roboto-bold;
+    src: url("../../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url("../../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: dragonBall;
+    src: url("../../fonts/BebasNeue-Regular.otf");
+}

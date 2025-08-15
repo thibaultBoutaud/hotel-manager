@@ -1,0 +1,137 @@
+.profil_top {
+    display: flex;
+}
+
+.profil_top .box:nth-child(1) {
+    width: 100%;
+}
+
+.profil_top .box:nth-child(2) {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.profil_top__update>div {
+    border: 1px solid rgba(108, 102, 102, 0.2);
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profil_top__update>div i {
+    color: rgb(0, 95, 242);
+    cursor: pointer;
+    border: 1px solid rgb(29, 29, 31);
+    padding: 10px;
+}
+
+.profil_top__update>div i:hover {
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.profil_top__profil img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* ----avatar---- */
+#img-avatar {
+    display: none;
+}
+
+.profil_form form>div {
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, .1);
+    height: 51px;
+    border-radius: 7px;
+    margin: 23px 0px;
+    max-width: 332px;
+}
+
+.profil_form form>div input {
+    height: 100%;
+    background-color: rgb(29, 29, 31);
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: #dfdbdb;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.profil_form .form-group label {
+    position: absolute;
+    top: -16px;
+    left: 15px;
+    color: #dfdbdb;
+    font-size: 12px;
+    background-color: rgb(29, 29, 31);
+    padding: 6px 5px;
+}
+
+/* -----birthdays---- */
+.birthdayInputsContainer {
+    display: flex;
+    width: 176px;
+}
+
+.birthdayInputsContainer input[name='birthDay-date'],
+.birthdayInputsContainer input[name='birthDay-month'] {
+    max-width: 40px;
+    font-size: 19px;
+}
+
+.birthdayInputsContainer input[name='birthDay-year'] {
+    max-width: 70px;
+    font-size: 19px;
+}
+
+
+.fiche-birthDay {
+    border: 1px solid rgba(108, 102, 102, 0.2);
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fiche-birthDay p {
+    margin: 0px 15px;
+}
+
+.iconContainer-birthDay {
+    display: flex;
+    align-items: center;
+}
+
+.iconContainer-birthDay i {
+    margin-right: 15px;
+}
+
+.fiche-birthDay {
+    width: 60%;
+}
+
+.fiche-birthDay i {
+    cursor: pointer;
+}
+
+.fiche-birthDay p:first-child {
+    text-transform: capitalize;
+}
+
+.fiche-birthDay p:nth-child(2) {
+    text-transform: uppercase;
+}

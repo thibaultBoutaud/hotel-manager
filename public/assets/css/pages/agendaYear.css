@@ -1,0 +1,67 @@
+.agendaYear {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.agendaYear__monthBox {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 234px;
+    padding: 25px;
+}
+
+.agendaYear__monthBox table {
+    font-size: 12px;
+}
+
+.agendaYear__monthBox table th {
+    padding: 5px;
+}
+
+.agendaYear__monthBox table td {
+    padding: 5px;
+}
+
+.yearCurrentDay {
+    background-color: rgb(0, 95, 242) !important;
+    /* #005C38  vert sympa*/
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.numero {
+    padding: 5px;
+}
+
+.numero:hover {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.agendaWeek__console {
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+}
+
+
+.agendaWeek__console__directions {
+    margin: 0px 10px;
+}
+
+.agendaWeek__console__directions i {
+    margin: 0px 5px;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.agendaWeek__console__directions i:hover {
+    background-color: rgb(0, 95, 242);
+}
+
+.agendaYear__monthBox__header>p {
+    color: rgb(103, 142, 204);
+}

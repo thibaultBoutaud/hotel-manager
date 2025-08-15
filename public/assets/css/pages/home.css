@@ -1,0 +1,339 @@
+.bgImg-blue {
+    background-image: url("../../images/bg/blue.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 24px;
+    border-radius: 15px;
+}
+
+.banner__text p {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+body .banner__text--title {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.banner__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner__container .btn {
+    background-color: rgb(0, 95, 242);
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.banner__text p:last-child {
+    margin-top: 2px;
+}
+
+/* --------web sites-------- */
+
+.home__webSites {
+    background-color: rgb(29, 29, 31);
+    color: white;
+    padding: 24px;
+    border-radius: 15px;
+    margin: 20px 0px;
+}
+
+.home__webSites img {
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+    object-fit: cover;
+}
+
+.home__webSites--container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.home__webSites--container a {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.home__webSites--container a div {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    padding: 8px;
+    transition-duration: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.home__webSites--container a ::before {
+    content: "";
+    position: absolute;
+    z-index: 9999;
+    height: 311px;
+    width: 100px;
+    filter: blur(10px);
+    background: linear-gradient(to right, #ffffff3d 30%, #ffffff1a);
+    top: -30px;
+    transition-duration: 1.5s;
+    transform: translate(-200%) skew(-25deg);
+}
+
+.home__webSites--container a :hover::before {
+    transform: translateX(100%) skewX(-25deg);
+    transition-duration: 1s;
+}
+
+/* ------body container------ */
+.home__bodyContainer {
+    display: flex;
+}
+
+.home__bodyContainer__plannings {
+    height: 600px;
+    width: 60%;
+}
+
+.home__bodyContainer__plannings img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home__bodyContainer__plannings__events,
+.home__bodyContainer__plannings__rdvs {
+    background-color: rgb(29, 29, 31);
+    color: white;
+    padding: 24px;
+    border-radius: 15px;
+    margin: 20px 15px;
+    height: 229px;
+}
+
+body .home__bodyContainer__plannings__rdvs {
+    height: 300px;
+}
+
+.home__bodyContainer__alarmes {
+    background-color: rgb(29, 29, 31);
+    color: white;
+    padding: 24px;
+    border-radius: 15px;
+    margin: 20px 0px;
+    height: 551px;
+    width: 40%;
+}
+
+.home__bodyContainer__alarmes__alerts {
+    min-height: 200px;
+}
+
+.home__bodyContainer__chatGeneral img {
+    width: 100%;
+    height: 100%;
+}
+
+/* --------decompte events--------- */
+
+.decompte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle {
+    padding: 15px;
+    background-color: rgb(0, 95, 242);
+    margin: 5px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.decompte {
+    margin: 30px 15px;
+}
+
+.decompte>div {
+    display: flex;
+}
+
+.decompte div p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.eventName {
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.deleteEvent {
+    margin-left: 15px;
+    color: orangered;
+    filter: brightness(.3);
+    cursor: pointer;
+}
+
+.deleteEvent:hover {
+    color: orange;
+    filter: brightness(1);
+}
+
+.meteo {
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.meteo p:nth-child(1) {
+    font-size: 15px;
+}
+
+.meteo p:nth-child(2) {
+    font-size: 35px;
+    color: rgb(0, 95, 242);
+    margin: 5px 0px;
+}
+
+.meteo p:nth-child(3) {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+/* --------rdvs-------- */
+
+.home__bodyContainer__plannings__rdvs__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 19px;
+}
+
+.home__bodyContainer__plannings__rdvs__container li {
+    display: flex;
+}
+
+.home__bodyContainer__plannings__rdvs__container li p:first-child {
+    margin-right: 15px;
+}
+
+.home__bodyContainer__plannings__rdvs__container li p:last-child {
+    color: rgb(0, 95, 242);
+    font-weight: 600;
+}
+
+.home__bodyContainer__plannings__rdvs__container li {
+    border: 1px solid rgba(108, 102, 102, 0.2);
+    border-radius: 3px;
+    padding: 16px;
+    margin: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.deleteRDV {
+    margin-left: 15px;
+    color: orangered;
+    filter: brightness(.5);
+    cursor: pointer;
+}
+
+.deleteRDV:hover {
+    color: orange;
+    filter: brightness(1);
+}
+
+
+/* --------alerts--------  */
+
+.alert {
+    display: flex;
+    padding: 15px;
+    margin: 15px 0px;
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.alert-red {
+    margin-right: 15px;
+}
+
+.courses-green {
+    margin-right: 15px;
+}
+
+.alert p:nth-child(2) {
+    text-transform: uppercase;
+}
+
+.alert p:nth-child(3) {
+    margin-left: 15px;
+    color: #bfbfbf;
+}
+
+.alert p:last-child {
+    margin: 0px 15px;
+    color: rgb(0, 95, 242);
+}
+
+.alert-red {
+    color: red;
+}
+
+.alertContainer {
+    margin-top: 15px;
+}
+
+.deleteAlert {
+    margin-left: 15px;
+    color: orangered;
+    filter: brightness(.3);
+    cursor: pointer;
+}
+
+.deleteAlert:hover {
+    color: orange;
+    filter: brightness(1);
+}
+
+
+/* -----courses----- */
+.courses-green {
+    color: #21a821;
+}
+
+.home__bodyContainer__alarmes__alerts,
+.home__bodyContainer__alarmes__courses {
+    overflow: scroll;
+    height: 237px;
+}
+
+.home__bodyContainer__alarmes__alerts {
+    margin-bottom: 37px;
+}
+
+.deleteCourse {
+    margin-left: 15px;
+    color: orangered;
+    filter: brightness(.3);
+    cursor: pointer;
+}
+
+.deleteCourse:hover {
+    color: orange;
+    filter: brightness(1);
+}

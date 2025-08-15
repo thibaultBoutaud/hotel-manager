@@ -1,0 +1,78 @@
+.tasksFilters {
+    display: flex;
+    padding: 15px 0px 25px 15px;
+
+}
+
+.tasksFilters p {
+    margin-right: 19px;
+    cursor: pointer;
+}
+
+.tasksKeys {
+    display: flex;
+    background-color: black;
+    padding: 15px;
+}
+
+.tasksKeys--type,
+.task--type {
+    width: 15%;
+}
+
+.tasksKeys--name,
+.task--name {
+    width: 45%;
+}
+
+.tasksKeys--status,
+.task--status {
+    width: 20%;
+}
+
+.tasksKeys--date,
+.task--date {
+    width: 20%;
+}
+
+.tasksContent {
+    background-color: rgb(43, 43, 47);
+    background-color: rgb(20, 21, 21);
+    border-top: none;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.tasksContent div:first-child {
+    border-top: none;
+}
+
+.tasksContent__container {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.tasksContent__container:hover {
+    background-color: rgb(34, 36, 36);
+}
+
+.tasksContent__container {
+    border-top: 1px solid rgba(255, 255, 255, .3);
+}
+
+.border--green {
+    background-color: rgb(14, 74, 37);
+}
+
+.border--red {
+    background-color: rgb(124, 44, 47);
+}
+
+.task--status p {
+    width: 57px;
+    padding: 8px;
+    border-radius: 3px;
+    text-align: center;
+}
