@@ -326,8 +326,6 @@ export class WeekView {
         const day = birthDate.getDate();
         const month = birthDate.getMonth();
         const today = new Date(year, month, day);
-        console.log(today);
-
         let age = today.getFullYear() - birthDate.getFullYear();
         const hasHadBirthdayThisYear =
             today.getMonth() > birthDate.getMonth() ||

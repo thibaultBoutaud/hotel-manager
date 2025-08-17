@@ -22,7 +22,6 @@ export class AgendaEventBinder {
         else if (e.target.classList.contains("yearView") || e.target.classList.contains("yearViewi") || e.target.classList.contains("yearViewPara")) {
             const dateMs = this.controller.agendaWeekModel.stateDateMs;
             const date = new Date(dateMs);
-            console.log(this.controller.agendaYear)
             const year = date.getFullYear();
             this.controller.agendaYearModel.stateYear = year;
             const data = this.controller.agendaYearModel.getAgendaPerYear(year);

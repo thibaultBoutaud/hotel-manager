@@ -159,7 +159,6 @@ export class TaskServices {
     }
 
         async getTasksByAuth() {
-            console.log("services task");
         try {
             const preRes = await fetch(`${HOST}/api/tasks/authTasks`, {
                 method: "GET", 

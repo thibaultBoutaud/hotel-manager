@@ -95,7 +95,6 @@ export class AuthView {
 
     showError(char) {
         const el = document.querySelector(".form__footer__answer");
-        console.log(el);
         if (el) {
             el.innerHTML = "";
             setTimeout(() => {

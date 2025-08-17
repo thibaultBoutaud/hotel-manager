@@ -2,7 +2,6 @@ export class PlanningView {
 
 
     render(tasks) {
-        console.log(tasks);
         const el = document.querySelector(".agendaContent");
         if (el) {
             el.innerHTML = `

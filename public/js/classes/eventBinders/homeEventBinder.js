@@ -37,7 +37,6 @@ export class HomeEventBinder {
     async deleteTaskEventManger(event) {
         const id = event.target.getAttribute("data-id");
         const res = await this.deleteTask(id);
-        console.log(res);
     }
 
     async deleteTask(id) {
